@@ -1,4 +1,4 @@
-# Decentralized Crowdfunding App - Project Highlights
+# Decentralized Crowdfunding App - BlockchainBacker
 
 This project is a decentralized crowdfunding application, inspired by Kickstarter. 
 
