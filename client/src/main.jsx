@@ -19,7 +19,8 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     {/* <ThirdwebProvider activeChain={activeChain}> */}
-    <ThirdwebProvider activeChain={Goerli}>
+    <ThirdwebProvider activeChain={Goerli}
+    clientId="635c7b1bde005a9e61e229ca8296fab5">
       <Router>
         <StateContextProvider>
           <App />
