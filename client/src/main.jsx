@@ -2,7 +2,8 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import {ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
-import {Goerli} from '@thirdweb-dev/chains'
+import { Sepolia } from "@thirdweb-dev/chains";
+// import {Goerli} from '@thirdweb-dev/chains'
 // import "./styles/globals.css";
 import {BrowserRouter as Router} from 'react-router-dom'
 import './index.css'
@@ -19,7 +20,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     {/* <ThirdwebProvider activeChain={activeChain}> */}
-    <ThirdwebProvider activeChain={Goerli}
+    <ThirdwebProvider activeChain={Sepolia}
     clientId="635c7b1bde005a9e61e229ca8296fab5">
       <Router>
         <StateContextProvider>

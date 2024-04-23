@@ -33,11 +33,15 @@ module.exports = {
   },
   solidity: {
     version: "0.8.17",
-    defaultNetwork: 'goerli', 
+    defaultNetwork: 'sepolia', 
     networks: {
       hardhat: {},
       goerli: {
         url: 'https://rpc.ankr.com/eth_goerli',
+        accounts: [`0x${process.env.PRIVATE_KEY}`]
+      },
+      sepolia: {
+        url: "https://11155111.rpc.thirdweb.com",
         accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
     },
